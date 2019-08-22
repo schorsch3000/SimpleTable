@@ -1,0 +1,19 @@
+{
+  "name": "schorsch3000/simple-table",
+  "description": "Simple Terminal Tables",
+  "authors": [
+    {
+      "name": "Schorsch 3000",
+      "email": "schorsch3000@shnbk.de"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "bramus/ansi-php": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SimpleTable\\": "src/"
+    }
+  }
+}
