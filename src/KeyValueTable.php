@@ -37,9 +37,13 @@ class KeyValueTable
      * @param string $value
      * @param string $keySufix
      */
-    public function addRow(string $key, string $value, string $keySufix = ':')
+    public function addRow(string $key = '', string $value = '', string $keySufix = ':')
     {
         $row = $this->table->getEmptyRow();
+        if(!strlen($key.$value)){
+            $this->table->addRow($row);
+            return;
+        }
 
         $keyCell = $row->getEmptyCell(0);
         $keyCell->setValue($key . $keySufix);
