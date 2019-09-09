@@ -96,6 +96,9 @@ class Table
         return implode("\n",$ret);
 
     }
-
+    public function clear(){
+        $this->rows=[];
+        $this->colPadding=[];
+    }
 
 }

@@ -63,5 +63,9 @@ class KeyValueTable
         return (string)$this->table;
     }
 
+    public function clear(){
+        $this->table->clear();
+    }
+
 
 }
